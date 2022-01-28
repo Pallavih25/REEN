@@ -1,0 +1,395 @@
+*{
+	padding:0;
+	margin:0;
+	box-sizing:border-box;
+	font-family: 'Source Sans Pro', sans-serif;
+}
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~helper class~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+.container{
+	width:1170px;
+	margin:0 auto;
+}
+a:link,
+a:hover,
+a:focus,
+a:active{
+	text-decoration:none;
+}
+.row,
+.row::after,
+.row::before{
+	clear:both;
+	display:table;
+	width:100%;
+}
+.col6,.col2,.col8,.col3,.col9,.col4{
+	float:left;
+	padding:0 15px;
+}
+.col6{
+	width:50%;
+}
+.col2{
+	width:calc((100% * 2) / 12);
+}
+.col8{
+	width:calc((100% * 8) / 12);
+}
+.col4{
+	width:calc((100% * 4) / 12);
+}
+.col3{
+	width:25%;
+}
+.col9{
+	width:75%;
+}
+.col12{
+	width:100%;
+}
+.mb-35{
+	margin-bottom:35px;
+}
+.mb-25{
+	margin-bottom:25px;
+}
+.mr-left-25{
+	margin-left:-25px;
+}
+.text-right{
+	text-align:right;
+}
+.text-center{
+	text-align:center;
+}
+.mr-twogrid{
+	margin-left:calc((100% * 2) / 12);
+}
+.row > :first-child{
+	padding-left:0;
+}
+.row > :last-child{
+	padding-right:0;
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~header section css~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+.bg-color{
+	background-color:#f5f7fa;
+}
+.header-links li,.header-icons li{
+	display:inline-block;
+	list-style:none;
+}
+.header-links li a{
+	color:#506a85;
+	padding:7px;
+	display:inline-block;
+}
+.header-links li a:hover,
+.header-links li a:focus,
+.header-links li a:active{
+	color:#00bc9c;
+}
+.header-links li{
+	margin:0 7px;
+	font-size:12px;
+}
+.header-icons li a{
+	color:#506a85;
+	padding:7px;
+	display:inline-block;
+	font-size:12px;
+}
+.header-icons li{
+	margin:0 3px;
+}
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~navbar section css~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+.navbar li{
+	list-style:none;
+	display:inline-block;
+	margin:0 11px;
+}
+.navbar li a{
+	display:inline-block;
+	color:#506a85;
+	font-weight:bold;
+	font-size:15px;
+	text-transform:uppercase;
+	padding:11px;
+}
+.navbar li a:hover,
+.navbar li a:focus,
+.navbar li a:active{
+	color:#00bc9c;
+}
+.pd{
+	padding:50px 0px;
+}
+.serch a{
+	color:#506a85;
+	display:inline-block;
+	padding:11px;
+}
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~heroimage section css~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+.heroimage{
+	background-image:url("../images/heroimage.jpg");
+	width:100%;
+	height:100vh;
+	position:relative;
+	background-size:cover;
+}
+.caption{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    position: absolute;	
+	text-align:center;
+	z-index:1;
+}
+.caption-heading{
+	color:#ffffff;
+	font-size:53px;
+	font-family: 'Lato', sans-serif;
+}
+.up-case{
+	text-transform:uppercase;
+}
+.caption-para{
+	color:#a3b1bf;
+	font-size:20px;
+	padding:35px 0 70px;
+}
+.btn{
+	text-align:center;
+	padding:25px 70px;
+	color:#ffffff;
+	background-color:#00bc9c;
+	cursor:pointer;
+	font-size:18px;
+	border:0;
+	outline:none;
+	border-radius:5px;
+}
+.hero-btn:hover,
+.hero-btn:focus,
+.hero-btn:active{
+	color:#00bc9c;
+	background-color:#fff;
+	border:3px solid #00bc9c;
+}
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~responsive section css~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+.responsive{
+	padding:130px 0px;
+}
+.heading{
+	text-align:center;
+	color:#506a85;
+	font-size:44px;
+	font-weight:bold;
+	font-family: 'Lato', sans-serif;
+}
+.para{
+	color:#73879c;
+	font-size:22px;
+	line-height:27px;
+	padding:35px 0 80px;
+}
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~thumbnail section css~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+.thumb-icon{
+	color:#00bc9c;
+	font-size:60px;
+	margin:0 15px;
+}
+.thumb-heading{
+	color:#506a85;
+	font-size:26px;
+	font-weight:bold;
+	font-family: 'Lato', sans-serif;
+}
+.thumb-para{
+	color:#73879c;
+	font-size:16px;
+	line-height:21px;
+}
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~work section css~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+.work{
+	padding:135px 0 135px;
+	background-color:#f2f5f7;
+}
+.image img{
+	width:100%;
+	height:100%;
+}
+.img-heading{
+	color:#506a85;
+	font-size:20px;
+	font-weight:bold;
+	padding:35px 0 0;
+}
+.img-label{
+	color:#73879c;
+	font-size:14px;
+	padding:10px 0 35px;
+}
+.labelbg-color{
+	background-color:#fff;
+}
+.brand{
+	padding:80px 0 0;
+}
+.dot,.dot2{
+	width:16px;
+	height:16px;
+	background-color:#506a85;
+	display:inline-block;
+	border-radius:20px;
+}
+.dot2{
+	background-color:#00bc9c;
+}
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~withus section css~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+.withus{
+	padding:130px 0;
+}
+.btn-pd{
+	padding:20px 25px;
+}
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~footer-one section css~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+.footer-one{
+	background-color:#2f4052;
+	padding:75px 0 75px;
+}
+.footer-heading{
+	font-size:16px;
+	font-weight:bold;
+	color:#fff;
+	margin-bottom:30px;
+	text-transform:uppercase;
+	font-family: 'Lato', sans-serif;
+}
+.footer-para{
+	font-size:14px;
+	color:#556373;
+	line-height:18px;
+	margin-bottom:30px;
+}
+.foot-label a{
+	font-size:15px;
+	font-weight:bold;
+	color:#a3b1bf;
+}
+.foot-label a i{
+	font-size:10px;
+}
+.footer-links li a{
+	color:#556373;
+}
+.footer-links li{
+	list-style:none;
+}
+.ft-link-pd-10{
+	padding:10px 0px;
+}
+.input{
+	width:100%;
+	padding:15px 15px;
+	background-color:#4e5c6c;
+	outline:none;
+	border:0;
+	border-radius:5px;
+	color:#828e99;
+	position: relative;
+}
+.ft-btn{
+    background-color: #00bc9c;
+    color: #fff;
+    outline: none;
+    border: 0;
+    padding: 10px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    position: absolute;
+    right: 53px;
+    transform: translate(0px, 5px);
+}
+.ft-btn:hover,
+.ft-btn:focus,
+.ft-btn:active{
+	background-color: #fff;
+    color: #00bc9c;
+	border:3px solid #00bc9c;
+}
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~footer-two section css~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+.footer-two{
+	background-color:#283645;
+	padding:35px 0 35px;
+}
+.ft2-links li{
+	display:inline-block;
+	list-style:none;
+}
+.ft2-links li a{
+	color:#556373;
+	padding:0 10px;
+	display:inline-block;
+	text-transform:uppercase;
+}
+.arrow a i {
+    position: fixed;
+    color: #949ba2;
+    background-color: #3c5065;
+    z-index: 10;
+    bottom: 15px;
+    right: 15px;
+    padding: 12px 15px;
+    font-weight: bold;
+}
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+}
