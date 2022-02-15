@@ -108,6 +108,7 @@ a:active{
 	list-style:none;
 	display:inline-block;
 	margin:0 11px;
+	position:relative;
 }
 .navbar li a{
 	display:inline-block;
@@ -121,6 +122,19 @@ a:active{
 .navbar li a:focus,
 .navbar li a:active{
 	color:#00bc9c;
+}
+.navbar li a::after{
+	content:'';
+	position:absolute;
+	height:2px;
+	width:0%;
+	background-color:#506a85;
+	left:0;
+	bottom:0;
+	transition:all 0.5s ease-in-out;
+}
+.navbar li a:hover::after{
+	width:100%;
 }
 .pd{
 	padding:50px 0px;
@@ -169,13 +183,14 @@ a:active{
 	border:0;
 	outline:none;
 	border-radius:5px;
+	border:3px solid #00bc9c;
 }
 .hero-btn:hover,
 .hero-btn:focus,
 .hero-btn:active{
 	color:#00bc9c;
 	background-color:#fff;
-	border:3px solid #00bc9c;
+	/* border:3px solid #00bc9c; */
 }
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~responsive section css~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 .responsive{
@@ -243,8 +258,14 @@ a:active{
 	background-color:#506a85;
 	display:inline-block;
 	border-radius:20px;
+	cursor:pointer;
 }
 .dot2{
+	background-color:#00bc9c;
+}
+.dot:hover,
+.dot:focus,
+.dot:active{
 	background-color:#00bc9c;
 }
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~withus section css~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
@@ -253,13 +274,14 @@ a:active{
 }
 .btn-pd{
 	padding:20px 25px;
+	border:3px solid #00bc9c;
 }
 .btn-pd:hover,
 .btn-pd:focus,
 .btn-pd:active{
 	color:#00bc9c;
 	background-color:#fff;
-	border:3px solid #00bc9c;
+	/* border:3px solid #00bc9c; */
 }
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~footer-one section css~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 .footer-one{
@@ -296,6 +318,13 @@ a:active{
 }
 .ft-link-pd-10{
 	padding:10px 0px;
+}
+.thumbnail,.image img{
+	width:100%;
+	height:100%;
+}
+.postion{
+	position:relative;
 }
 .input{
 	width:100%;
